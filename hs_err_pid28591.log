@@ -1,0 +1,21 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f3b25ece7fe, pid=28591, tid=28703
+#
+# JRE version: OpenJDK Runtime Environment (16.0.1+9) (build 16.0.1+9-24)
+# Java VM: OpenJDK 64-Bit Server VM (16.0.1+9-24, mixed mode, tiered, compressed oops, compressed class ptrs, g1 gc, linux-amd64)
+# Problematic frame:
+# J 1035 c1 java.nio.DirectIntBufferU.get(I)I java.base@16.0.1 (34 bytes) @ 0x00007f3b25ece7fe [0x00007f3b25ece700+0x00000000000000fe]
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/lib/systemd/systemd-coredump %P %u %g %s %t 9223372036854775808 %e" (or dumping to /home/danilo/Documentos/Workspace Spring/gestion_usuarios/core.28591)
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -XX:+ShowCodeDetailsInExceptionMessages -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:44005 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=46097 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=localhost -Dspring.jmx.enabled=true -Dspring.application.admin.enabled=true -Djava.security.egd=file:/dev/./urandom -XX:TieredStopAtLevel=1 -Dspring.boot.project.name=gestion_usuarios -javaagent:/opt/SpringToolSuite/configuration/org.eclipse.osgi/253/0/.cp/lib/javaagent-shaded.jar -Dfile.encoding=UTF-8 com.gtc.gestion.usuario.GestionUsuariosApplication --spring.output.ansi.enabled=always
+
+Host: Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz, 4 cores, 7G, 
